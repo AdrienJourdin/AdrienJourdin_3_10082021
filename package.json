@@ -1,0 +1,19 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrienJourdin/AdrienJourdin_3_10082021.git"
+  },
+  "author": "Adrien Jourdin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrienJourdin/AdrienJourdin_3_10082021/issues"
+  },
+  "homepage": "https://github.com/AdrienJourdin/AdrienJourdin_3_10082021#readme"
+}

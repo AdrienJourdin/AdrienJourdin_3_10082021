@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    position:relative;
+    justify-content: center;
+}
+
+.header{
+    &__logo{
+        width: 44%;
+
+    }
+    &__btn-retour{
+        top: 20%;
+        left:5%;
+        position:absolute;
+
+    }
+}
