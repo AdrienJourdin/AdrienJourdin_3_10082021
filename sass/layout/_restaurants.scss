@@ -1,0 +1,67 @@
+.restaurants{
+    width: 90%;
+    margin:auto;
+    &__head{
+        @include main-head;
+        margin-bottom:25px;
+    }
+
+    &__liste{
+        row-gap:15px;
+    }
+}
+
+.restaurant{
+    height:auto;
+    border-radius:20px;
+    @include shadow-grey;
+    position:relative;
+    margin-bottom:15px;
+    &__image{
+        border-radius: 20px 20px 0px 0px;
+        display: inline-block;
+        background-position:center;
+        background-size: cover;
+        height:175px;
+        width: 100%;
+    }
+    &__head{
+        font-weight:800 ;
+        font-size:map-get($font-size,size-txt-resto );
+        width:90%;
+        margin:auto;
+        padding:20px 0px 5px 0px;
+
+    }
+    &__localisation{
+        font-weight:400 ;
+        font-size:map-get($font-size,size-txt-resto );
+        padding-bottom:20px;
+        width:90%;
+        margin:0px auto;
+    }
+    &__like{
+        position:absolute;
+        width: auto;
+        bottom:30px;
+        right:25px;
+
+    }
+    &__nouveau{
+        font-size:0.8em;
+        font-weight:800;
+        position:absolute;
+        background-color: $color-tertiary;
+        color:#008766;
+        top:12px;
+        right:12px;
+        width:auto;
+        padding:5px;
+        border-radius: 2px;
+
+    }
+    a{
+        width:335px;
+        height:255px;
+    }
+}

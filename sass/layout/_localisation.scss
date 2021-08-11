@@ -1,0 +1,28 @@
+.localisation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5%;
+    background-color: $color-grey-med;
+    background: linear-gradient(to bottom,#cfcfcf,$color-grey-med 5px,$color-grey-med);
+    padding: 15px 0px;
+    &__logo{
+        width: 12px;
+    }
+    &__saisie{
+        width: auto;
+
+        input{
+            width:auto;
+            border: none;
+            color:$color-grey-dark;
+            background-color: $color-grey-med;
+            font-size:1em;
+            font-family: map-get($font-family,font-texte);
+            font-weight: 600;
+            &:active{
+                border: 0px;
+            }
+        }
+    }
+}
