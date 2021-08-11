@@ -12,7 +12,8 @@
     }
     &__liste{
         i{
-            width:auto;
+            width: 20px;
+            margin-right:5px;
         }
         width:90%;
         display: flex;
@@ -20,9 +21,9 @@
         margin:auto;
         padding-bottom:10px;
         font-family: map-get($font-family,font-texte);
-        font-weight:400;
+        font-weight:300;
         &--bold{
-            font-weight:600;
+            font-weight:500;
         }
         a{
             color:white;

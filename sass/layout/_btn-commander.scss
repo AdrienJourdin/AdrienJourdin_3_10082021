@@ -1,0 +1,6 @@
+.btn-cmd{
+    background-color: $color-grey-light;
+    @include main-btn;
+    width:50%;
+    margin:35px auto 55px auto;
+}

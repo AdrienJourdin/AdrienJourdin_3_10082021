@@ -22,3 +22,20 @@ ul {
     margin:0px;
     padding:0px;
     }
+
+h1{
+    background-color: $color-grey-light;
+    font-family: map-get($font-family, font-title );
+    font-size: map-get($font-size, size-main-head );
+    font-weight: 500;
+    width:90%;
+    margin:0px auto;
+}
+
+h2{
+    font-weight: 400;
+    font-size:1em;
+    width:90%;
+    margin:0px auto;
+    padding-top:10px;
+}

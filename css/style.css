@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;300;400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
   width: 100%;
@@ -26,6 +26,23 @@ ul {
   padding: 0px;
 }
 
+h1 {
+  background-color: #f6f6f6;
+  font-family: Shrikhand;
+  font-size: 1.5em;
+  font-weight: 500;
+  width: 90%;
+  margin: 0px auto;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1em;
+  width: 90%;
+  margin: 0px auto;
+  padding-top: 10px;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -39,9 +56,10 @@ header {
   width: 44%;
 }
 .header__btn-retour {
-  top: 20%;
-  left: 5%;
+  top: 25px;
+  left: 20px;
   position: absolute;
+  width: auto;
 }
 
 .localisation {
@@ -93,7 +111,7 @@ header {
 }
 .presentation__bouton_exp {
   margin: 35px 0px 55px 0px;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
   border-radius: 30px;
   padding: 15px 20px;
@@ -140,10 +158,11 @@ header {
 }
 .etape__texte {
   height: auto;
+  font-weight: 700;
   border-radius: 20px;
   background-color: #f6f6f6;
   padding: 25px 0px 25px 0px;
-  box-shadow: 0px 3px 5px #c6c6c6;
+  box-shadow: 2px 2px 5px #c6c6c6;
 }
 .etape__texte i {
   width: auto;
@@ -151,6 +170,7 @@ header {
 }
 .etape__texte i::before {
   margin: 0px 20px 0px 30px;
+  color: #7e7e7e;
 }
 
 .restaurants {
@@ -169,7 +189,7 @@ header {
 .restaurant {
   height: auto;
   border-radius: 20px;
-  box-shadow: 0px 3px 5px #c6c6c6;
+  box-shadow: 2px 2px 5px #c6c6c6;
   position: relative;
   margin-bottom: 15px;
 }
@@ -200,10 +220,11 @@ header {
   width: auto;
   bottom: 30px;
   right: 25px;
+  font-size: 1.3em;
 }
 .restaurant__nouveau {
   font-size: 0.8em;
-  font-weight: 800;
+  font-weight: 600;
   position: absolute;
   background-color: #99E2D0;
   color: #008766;
@@ -238,16 +259,107 @@ header {
   margin: auto;
   padding-bottom: 10px;
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 300;
 }
 .footer__liste i {
-  width: auto;
+  width: 20px;
+  margin-right: 5px;
 }
 .footer__liste--bold {
-  font-weight: 600;
+  font-weight: 500;
 }
 .footer__liste a {
   color: white;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  padding-bottom: 80px;
+}
+.menu__image {
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  height: 255px;
+  width: 100%;
+}
+.menu__head {
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 230px;
+  border-radius: 30px 30px 0px 0px;
+  padding: 30px 0px;
+}
+.menu__head > i {
+  position: absolute;
+  width: 16px;
+  margin: auto 0px;
+  top: 40px;
+  right: 20px;
+}
+
+.titre-liste {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.titre-liste__trait {
+  height: 3px;
+  width: 40px;
+  margin: 5px 0px 0px 20px;
+  background-color: #99E2D0;
+}
+
+.service {
+  width: 100%;
+  row-gap: 10px;
+  padding-bottom: 8px;
+}
+
+.plat {
+  background-color: white;
+  width: 90%;
+  margin: 0px auto 15px auto;
+  box-shadow: 2px 2px 5px #c6c6c6;
+  border-radius: 20px;
+  padding: 10px 0px;
+}
+.plat__head {
+  width: 90%;
+  margin: auto;
+  font-weight: 700;
+  font-size: 1em;
+}
+.plat__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 5px auto 0px auto;
+  font-size: 0.9em;
+}
+.plat__description__detail {
+  width: auto;
+}
+.plat__description__prix {
+  width: auto;
+  font-weight: 700;
+}
+.plat__check {
+  display: none;
+}
+
+.btn-cmd {
+  text-align: center;
+  background-color: #f6f6f6;
+  font-weight: 400;
+  color: white;
+  border-radius: 30px;
+  padding: 15px 20px;
+  background: linear-gradient(350deg, #9356DC, #9356DC 5%, #FF79DA);
+  width: auto;
+  box-shadow: 0px 3px 5px #c6c6c6;
+  width: 50%;
+  margin: 50px auto 0px auto;
 }
 
 /*# sourceMappingURL=style.css.map */
