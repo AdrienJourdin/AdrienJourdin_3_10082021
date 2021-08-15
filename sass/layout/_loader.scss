@@ -9,7 +9,7 @@
     flex-direction: column;
     text-align:center;
     width:100%;
-    animation: disp-load 2000ms;
+    animation: disp-load $load-duration;
     animation-fill-mode: forwards;
     &__head{
         margin-top: 200px;
@@ -24,8 +24,27 @@
         margin-top:3%;
         font-size:2em;
         color:$color-primary;
-        animation: loading-spin 2000ms;
+        animation: loading-spin $load-duration;
 
+    }
+    &__bar {
+
+
+        &_border{
+            width:66%;
+            max-width: 1000px;
+            height:10px;
+            margin: 3% auto 0px auto;
+            border: solid black;
+            padding:1px;
+            
+        }
+        height: 100%;
+
+        background-color: $color-secondary;
+        animation:load-bar $load-duration ease-in-out;
+        animation-fill-mode: both;
+        transform-origin: 0% 50%;
     }
 }
 
@@ -38,6 +57,11 @@
         }
         &__texte{
             font-size:1.2em;
+        }
+        &__bar{
+            &_border{
+            height:20px;
+            }
         }
     }
 }
@@ -76,3 +100,14 @@
     }
 }
 
+@keyframes load-bar{
+    0%{
+        transform:scaleX(0);
+    }
+    75%{
+        transform:scaleX(1);
+    }
+    100%{
+        transform:scaleX(1);
+    }
+}

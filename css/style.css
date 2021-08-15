@@ -557,6 +557,21 @@ header {
   color: #9356dc;
   animation: loading-spin 2000ms;
 }
+.loader__bar {
+  height: 100%;
+  background-color: #ff79da;
+  animation: load-bar 2000ms ease-in-out;
+  animation-fill-mode: both;
+  transform-origin: 0% 50%;
+}
+.loader__bar_border {
+  width: 66%;
+  max-width: 1000px;
+  height: 10px;
+  margin: 3% auto 0px auto;
+  border: solid black;
+  padding: 1px;
+}
 
 @media all and (min-device-width: 1100px) {
   .loader__head {
@@ -564,6 +579,9 @@ header {
   }
   .loader__texte {
     font-size: 1.2em;
+  }
+  .loader__bar_border {
+    height: 20px;
   }
 }
 @media all and (min-device-width: 450px) and (max-device-width: 1100px) {
@@ -591,6 +609,17 @@ header {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes load-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  75% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }
 
