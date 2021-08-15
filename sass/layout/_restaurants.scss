@@ -12,7 +12,7 @@
 }
 
 .restaurant{
-    height:auto;
+    width: 100%;
     border-radius:20px;
     @include shadow-grey;
     position:relative;
@@ -61,8 +61,38 @@
         border-radius: 2px;
 
     }
-    a{
-        width:335px;
-        height:255px;
+
+}
+
+
+@media all and (min-device-width: map-get($breakpoints, tablette )) and (max-device-width:map-get($breakpoints, desktop )){
+
+
+    .restaurants{   
+        &__liste{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 10px;
+        }
+    }
+    .restaurant{
+    max-width: 48%;
+    }
+
+}
+
+
+
+
+@media all and (min-device-width: map-get($breakpoints, desktop )){
+
+    .restaurants{   
+        &__liste{
+            display: flex;
+            flex-direction: row;
+            column-gap: 30px;
+
+        }
     }
 }

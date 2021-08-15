@@ -38,7 +38,16 @@
         border-radius: 20px;
         background-color: $color-grey-light;
         padding:25px 0px 25px 0px;
+        
         @include shadow-grey;
+        &:hover{
+            background-color: lighten( $color-primary, 30%);
+            i{
+                &::before{
+                    color:$color-primary;
+                }
+            }
+        }
         i{
             width: auto;
             height:auto; 
@@ -47,6 +56,39 @@
                 margin:0px 20px 0px 30px;
                 color:$color-logo-fct;
             }
+        }
+    }
+}
+
+@media all and (min-device-width: 1100px){
+    .fonctionnement{
+
+        &__etapes{
+            display: flex;
+            flex-direction: row;
+            column-gap: 30px;
+        }
+    }
+    .etape{
+        &__texte{
+            text-align: center;
+        }
+    }
+}
+
+@media all and (min-device-width: map-get($breakpoints, tablette )) and (max-device-width:map-get($breakpoints, desktop )){
+    .etape{
+        max-width:350px;
+        &__texte{
+            text-align: center;
+        }
+    }
+    .fonctionnement{
+        &__head{
+            text-align:center;
+        }
+        &__etapes{
+            align-items: center;
         }
     }
 }

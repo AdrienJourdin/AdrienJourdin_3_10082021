@@ -1,5 +1,5 @@
 header {
-    height:10%;
+    height:65px;
     display: flex;
     flex-direction: row;
     position:fixed;
@@ -15,8 +15,8 @@ header {
 .header{
     position:relative;
     &__logo{
-        width: 44%;
-        height:auto;
+        width:180px;
+        height:50px;
 
     }
     &__btn-retour{
@@ -27,4 +27,5 @@ header {
 
     }
 }
+
 
