@@ -470,10 +470,67 @@ header {
 .loader {
   position: fixed;
   inset: 0;
-  background-color: red;
+  color: black;
+  background-color: white;
   z-index: 20;
-  opacity: 0;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  animation: disp-load 1500ms;
+}
+.loader__head {
+  margin-top: 200px;
+  font-family: Shrikhand;
+  font-size: 1.5em;
+}
+.loader__texte {
+  margin-top: 2%;
+  font-size: 1em;
+}
+.loader__logo {
+  margin-top: 3%;
+  font-size: 2em;
+  color: #9356dc;
+  animation: loading-spin 2000ms;
+}
+
+@media all and (min-device-width: 1100px) {
+  .loader__head {
+    font-size: 2em;
+  }
+  .loader__texte {
+    font-size: 1.2em;
+  }
+}
+@media all and (min-device-width: 450px) and (max-device-width: 1100px) {
+  .loader__head {
+    font-size: 3em;
+  }
+  .loader__texte {
+    font-size: 1.5em;
+  }
+}
+@keyframes loading-spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes disp-load {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,77 @@
 .loader {
     position: fixed;
     inset: 0;
-    background-color: red;
+    color:black;
+    background-color: white;
     z-index: 20;
-    opacity: 0;
     pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    width:100%;
+    opacity:0;
+    animation: disp-load 1500ms;
+    &__head{
+        margin-top: 200px;
+        font-family: map-get($font-family, font-title );
+        font-size:1.5em;
+    }
+    &__texte{
+        margin-top:2%;
+        font-size:1em;
+    }
+    &__logo{
+        margin-top:3%;
+        font-size:2em;
+        color:$color-primary;
+        animation: loading-spin 2000ms;
+    }
 }
+
+
+@media all and (min-device-width: map-get($breakpoints, desktop )){
+    .loader {
+        &__head{
+
+            font-size:2em;
+        }
+        &__texte{
+            font-size:1.2em;
+        }
+    }
+}
+
+@media all and (min-device-width: map-get($breakpoints, tablette )) and (max-device-width:map-get($breakpoints, desktop )){
+    .loader {
+        &__head{
+
+            font-size:3em;
+        }
+        &__texte{
+            font-size:1.5em;
+        }
+    }
+}
+
+
+@keyframes loading-spin{
+    from {
+        transform: rotate(0);   
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes disp-load{
+    0% {
+        opacity:1;   
+    }
+    75%{
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
