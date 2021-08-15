@@ -440,6 +440,32 @@ header {
   box-shadow: 3px 3px 5px #a2a2a2;
 }
 
+/*Animations*/
+.service:nth-child(1) {
+  animation: display_service 500ms ease-in-out;
+  animation-fill-mode: both;
+}
+
+.service:nth-child(2) {
+  animation: display_service 500ms ease-in-out 500ms;
+  animation-fill-mode: both;
+}
+
+.service:nth-child(3) {
+  animation: display_service 500ms ease-in-out 1000ms;
+  animation-fill-mode: both;
+}
+
+@keyframes display_service {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @media all and (min-device-width: 450px) and (max-device-width: 1100px) {
   .ensemble_services {
     display: flex;
@@ -478,8 +504,8 @@ header {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  opacity: 0;
   animation: disp-load 1500ms;
+  animation-fill-mode: forwards;
 }
 .loader__head {
   margin-top: 200px;
