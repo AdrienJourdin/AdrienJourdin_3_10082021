@@ -1,0 +1,8 @@
+.loader {
+    position: fixed;
+    inset: 0;
+    background-color: red;
+    z-index: 20;
+    opacity: 0;
+    pointer-events: none;
+}

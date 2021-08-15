@@ -18,5 +18,8 @@
     &__bouton_exp{
         margin:35px 0px 55px 0px;
         @include main-btn;
+        position: relative;
+        z-index: 1;
+
     }
 }
