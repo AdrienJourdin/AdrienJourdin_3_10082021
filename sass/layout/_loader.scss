@@ -41,7 +41,7 @@
         }
         height: 100%;
 
-        background-color: $color-secondary;
+        background: linear-gradient(350deg,$color-primary,$color-primary 5%, $color-secondary);;
         animation:load-bar $load-duration ease-in-out;
         animation-fill-mode: both;
         transform-origin: 0% 50%;

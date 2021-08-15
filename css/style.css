@@ -272,7 +272,7 @@ header {
 .restaurant__like--checked {
   opacity: 0;
   z-index: 9;
-  background: linear-gradient(210deg, #a16be0, #a16be0 5%, #ff93e1);
+  background: linear-gradient(210deg, #9356dc, #9356dc 5%, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -477,17 +477,17 @@ header {
 
 /*Animations*/
 .service:nth-child(1) {
-  animation: display_service 500ms ease-in-out;
+  animation: display_service 700ms ease-in-out;
   animation-fill-mode: both;
 }
 
 .service:nth-child(2) {
-  animation: display_service 500ms ease-in-out 500ms;
+  animation: display_service 700ms ease-in-out 700ms;
   animation-fill-mode: both;
 }
 
 .service:nth-child(3) {
-  animation: display_service 500ms ease-in-out 1000ms;
+  animation: display_service 700ms ease-in-out 1400ms;
   animation-fill-mode: both;
 }
 
@@ -559,7 +559,7 @@ header {
 }
 .loader__bar {
   height: 100%;
-  background-color: #ff79da;
+  background: linear-gradient(350deg, #9356dc, #9356dc 5%, #ff79da);
   animation: load-bar 2000ms ease-in-out;
   animation-fill-mode: both;
   transform-origin: 0% 50%;
