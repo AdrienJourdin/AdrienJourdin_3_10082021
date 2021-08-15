@@ -262,12 +262,31 @@ header {
   width: 90%;
   margin: 0px auto;
 }
-.restaurant__like {
+.restaurant__like i {
   position: absolute;
   width: auto;
   bottom: 30px;
   right: 25px;
   font-size: 1.3em;
+}
+.restaurant__like--checked {
+  opacity: 0;
+  z-index: 9;
+  background: linear-gradient(210deg, #a16be0, #a16be0 5%, #ff93e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__like--unchecked {
+  opacity: 1;
+  z-index: 10;
+}
+.restaurant__like--unchecked:hover {
+  animation: uncheck-like 600ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.restaurant__like--unchecked:hover ~ .restaurant__like--checked {
+  animation: check-like 600ms ease-in-out;
+  animation-fill-mode: forwards;
 }
 .restaurant__nouveau {
   font-size: 0.8em;
@@ -282,6 +301,22 @@ header {
   border-radius: 2px;
 }
 
+@keyframes check-like {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes uncheck-like {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media all and (min-device-width: 450px) and (max-device-width: 1100px) {
   .restaurants__liste {
     display: flex;
@@ -504,7 +539,7 @@ header {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  animation: disp-load 1500ms;
+  animation: disp-load 2000ms;
   animation-fill-mode: forwards;
 }
 .loader__head {
@@ -544,7 +579,7 @@ header {
     transform: rotate(0);
   }
   to {
-    transform: rotate(1turn);
+    transform: rotate(1.5turn);
   }
 }
 @keyframes disp-load {

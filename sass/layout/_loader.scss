@@ -9,7 +9,7 @@
     flex-direction: column;
     text-align:center;
     width:100%;
-    animation: disp-load 1500ms;
+    animation: disp-load 2000ms;
     animation-fill-mode: forwards;
     &__head{
         margin-top: 200px;
@@ -60,7 +60,7 @@
         transform: rotate(0);   
     }
     to {
-        transform: rotate(1turn);
+        transform: rotate(1.5turn);
     }
 }
 

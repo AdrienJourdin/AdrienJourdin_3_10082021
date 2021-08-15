@@ -41,11 +41,35 @@
         margin:0px auto;
     }
     &__like{
-        position:absolute;
-        width: auto;
-        bottom:30px;
-        right:25px;
-        font-size: 1.3em;
+        i{
+            position:absolute;
+            width: auto;
+            bottom:30px;
+            right:25px;
+            font-size: 1.3em;
+        }
+        &--checked{
+            opacity: 0;
+            z-index:9;
+            
+            background: linear-gradient(210deg,lighten($color-primary,5%),lighten($color-primary,5%) 5%, lighten($color-secondary,5%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+        &--unchecked{
+            opacity: 1;
+            z-index:10;
+
+        }
+        &--unchecked:hover{
+            animation: uncheck-like 600ms ease-in-out;
+            animation-fill-mode: forwards;
+            & ~ .restaurant__like--checked{
+                animation: check-like 600ms ease-in-out;
+                animation-fill-mode: forwards;
+            }
+        }
 
     }
     &__nouveau{
@@ -63,6 +87,24 @@
     }
 
 }
+
+@keyframes check-like{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes uncheck-like{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+
 
 
 @media all and (min-device-width: map-get($breakpoints, tablette )) and (max-device-width:map-get($breakpoints, desktop )){
