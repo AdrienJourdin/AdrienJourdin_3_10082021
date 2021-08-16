@@ -80,35 +80,3 @@
 }
 
 
-@keyframes loading-spin{
-    from {
-        transform: rotate(0);   
-    }
-    to {
-        transform: rotate(1.5turn);
-    }
-}
-
-@keyframes disp-load{
-    0% {
-        opacity:1;   
-    }
-    75%{
-        opacity:1;
-    }
-    100% {
-        opacity:0;
-    }
-}
-
-@keyframes load-bar{
-    0%{
-        transform:scaleX(0);
-    }
-    75%{
-        transform:scaleX(1);
-    }
-    100%{
-        transform:scaleX(1);
-    }
-}

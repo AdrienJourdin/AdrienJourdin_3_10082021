@@ -1,0 +1,89 @@
+@keyframes loading-spin{
+    from {
+        transform: rotate(0);   
+    }
+    to {
+        transform: rotate(1.5turn);
+    }
+}
+
+@keyframes disp-load{
+    0% {
+        opacity:1;   
+    }
+    75%{
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes load-bar{
+    0%{
+        transform:scaleX(0);
+    }
+    75%{
+        transform:scaleX(1);
+    }
+    100%{
+        transform:scaleX(1);
+    }
+}
+
+
+@keyframes check-like{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes uncheck-like{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+
+@keyframes display_service{
+    0%{
+        opacity: 0;
+        transform:translateY(-15px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px)
+    }
+
+}
+
+@keyframes check_disp{
+    from{
+        width:0px;
+    }
+    to{
+        width:17%;
+    }
+}
+
+@keyframes check_hide{
+    from{
+        transform:scaleX(1);
+    }
+    to{
+        transform: scaleX(0);
+    }
+}
+
+@keyframes check_flip{
+    from{
+        transform:rotate(0);
+    }
+    to{
+        transform: rotate(-1turn);
+    }
+}
