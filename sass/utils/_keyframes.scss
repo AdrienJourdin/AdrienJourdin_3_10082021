@@ -61,23 +61,6 @@
 
 }
 
-@keyframes check_disp{
-    from{
-        width:0px;
-    }
-    to{
-        width:17%;
-    }
-}
-
-@keyframes check_hide{
-    from{
-        transform:scaleX(1);
-    }
-    to{
-        transform: scaleX(0);
-    }
-}
 
 @keyframes check_flip{
     from{
