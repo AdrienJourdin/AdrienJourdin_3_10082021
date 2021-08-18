@@ -5,214 +5,248 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
-        <script src="https://use.fontawesome.com/releases/v6.0.0-beta1/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/eb45894d0a.js" crossorigin="anonymous"></script>
 
 
     </head>
     <body>
-            <!-- Entête du site-->
-            <header>
-                <div class="header__btn-retour">
-                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-                </div>
-                <div class="header__logo">
-                    <img src="images/logo/ohmyfood.png" alt="Logo de ohmyfood" />
-                </div>
-            </header>
-
-
-            <!--Section Menu-->
-            <section class="menu">
-                <div class="menu__image" style="background-image:url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)" >
-                </div>
+        <!-- Entête du site-->
+        <header>
+            <div class="header__btn-retour">
+                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="header__logo">
+                <img src="images/logo/ohmyfood.png" alt="Logo de ohmyfood" />
+            </div>
+        </header>
+    
+    
+        <!--Section Menu-->
+        <section class="menu">
+            <div class="menu__image" style="background-image:url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)">
+            </div>
+            <div class="menu__base">
                 <div class="menu__head">
                     <h1>Le délice des sens</h1>
-                    <input type="checkbox" name="like" class="like"/>
+                    <i class="far fa-heart menu__head_like--unchecked"></i>
+                    <i class="fas fa-heart menu__head_like--checked"></i>
                 </div>
-
+    
                 <!--Entrée-->
-                <h2 class="titre-liste">Entrées</h2>
-                <ul class="service">
-
-                    <!--Tartare de thon-->
-                    <li class="plat">
-                        <div class="plat__head">
-                            Tartare de thon
+                <div class="ensemble_services" >
+                    <div class="service">
+                        <div class="titre-liste">
+                            <h2>ENTRÉES</h2>
+                            <div class="titre-liste__trait"></div>
                         </div>
-                        <div class="plat__description">
-                            Assaisonné au yuzu
+                        <!--Tartare de poulpe acidulé-->
+                        <div class="plat">
+                            <div class="plat__description">
+                                <div class="plat__description__head">
+                                    Tartare de thon
+                                </div>
+                                <div class="plat__description__detail">
+                                    Assaisonné au yuzu
+                                </div>
+                            </div>
+                            <div class="plat__prix">
+                                25€
+                            </div>
+                            <div class="plat__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                        <div class="plat__prix">
-                            25€
+    
+                        <!--Velouté de légumes d'antan-->
+                        <div class="plat">
+                            <div class="plat__description">
+                                <div class="plat__description__head">
+                                    Bouchée de homard croustillant 
+                                </div>
+                                <div class="plat__description__detail">
+                                    Et sa farandole de petits légumes
+                                </div>
+                            </div>
+                            <div class="plat__prix">
+                                35€
+                            </div>
+                            <div class="plat__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                        <div class="plat__check">
-                            <i class="fa-solid fa-circle-check"></i>
+    
+                        <!--Soupe à l'oignon-->
+                        <div class="plat">
+                            <div class="plat__description">
+                                <div class="plat__description__head">
+                                    Velouté de cèpes 
+                                </div>
+                                <div class="plat__description__detail">
+                                    Aux truffes
+                                </div>
+                            </div>
+                            <div class="plat__prix">
+                                20€
+                            </div>
+                            <div class="plat__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                    </li>
-
-                    <!--Bouchée de homard croustillant -->
-                    <li class="plat">
-                        <div class="plat__head">
-                            Bouchée de homard croustillant 
+                    </div>
+    
+                    <!--Plat-->
+    
+                    <div class="service">
+                        <div class="titre-liste">
+                            <h2>PLATS</h2>
+                            <div class="titre-liste__trait"></div>
                         </div>
-                        <div class="plat__description">
-                            Et sa farandole de petits légumes
+                        <!--Coquilles Saint-Jacques-->
+                        <div class="plat">
+                            <div class="plat__description">
+                                <div class="plat__description__head">
+                                    Poulet rôti aux herbes de Provence 
+                                </div>
+                                <div class="plat__description__detail">
+                                    Et sa crème de truffe
+                                </div>
+                            </div>
+                            <div class="plat__prix">
+                                40€
+                            </div>
+                            <div class="plat__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                        <div class="plat__prix">
-                            35€
+    
+                        <!--Magret de canard-->
+                        <div class="plat">
+                            <div class="plat__description">
+                                <div class="plat__description__head">
+                                    Langouste rôtie 
+                                </div>
+                                <div class="plat__description__detail">
+                                    Et ses légumes de saison
+                                </div>
+                            </div>
+                            <div class="plat__prix">
+                                35€
+                            </div>
+                            <div class="plat__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                        <div class="plat__check">
-                            <i class="fa-solid fa-circle-check"></i>
+    
+                        <!--Pigeonneau d’Ille-et-Vilaine-->
+                        <div class="plat">
+                            <div class="plat__description">
+                                <div class="plat__description__head">
+                                    Côte de boeuf Angus 
+                                </div>
+                                <div class="plat__description__detail">
+                                    Et sa purée de panais
+                                </div>
+                            </div>
+                            <div class="plat__prix">
+                                44€
+                            </div>
+                            <div class="plat__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                    </li>
-
-                    <!--Velouté de cèpes -->
-                    <li class="plat">
-                        <div class="plat__head">
-                            Velouté de cèpes 
+                    </div>
+    
+                    <!--Dessert-->
+    
+                    <div class="service">
+    
+                        <div class="titre-liste">
+                            <h2>DESSERTS</h2>
+                            <div class="titre-liste__trait"></div>
                         </div>
-                        <div class="plat__description">
-                            Aux truffes
+                        <!--Pétales de violettes glacés-->
+                        <div class="plat">
+                            <div class="plat__description">
+                                <div class="plat__description__head">
+                                    Farandole de desserts
+                                </div>
+                                <div class="plat__description__detail">
+                                    Du chef
+                                </div>
+                            </div>
+                            <div class="plat__prix">
+                                18€
+                            </div>
+                            <div class="plat__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                        <div class="plat__prix">
-                            20€
+    
+                        <!--Fondant au chocolat-->
+                        <div class="plat">
+                            <div class="plat__description">
+                                <div class="plat__description__head">
+                                    Crème brulée 
+                                </div>
+                                <div class="plat__description__detail">
+                                    Revisité
+                                </div>
+                            </div>
+                            <div class="plat__prix">
+                                22€
+                            </div>
+                            <div class="plat__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                        <div class="plat__check">
-                            <i class="fa-solid fa-circle-check"></i>
+    
+                        <!--Millefeuille croustillant-->
+                        <div class="plat">
+                            <div class="plat__description">
+                                <div class="plat__description__head">
+                                    Tiramisu 
+                                </div>
+                                <div class="plat__description__detail">
+                                    À la noisette
+                                </div>
+                            </div>
+                            <div class="plat__prix">
+                                23€
+                            </div>
+                            <div class="plat__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-
-                <!--Plat-->
-                <h2 class="titre-liste">Plats</h2>
-                <ul class="service">
-
-                    <!--Poulet rôti aux herbes de Provence-->
-                    <li class="plat">
-                        <div class="plat__head">
-                            Poulet rôti aux herbes de Provence 
-                        </div>
-                        <div class="plat__description">
-                            Et sa crème de truffe
-                        </div>
-                        <div class="plat__prix">
-                            40€
-                        </div>
-                        <div class="plat__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-
-                    <!--Langouste rôtie-->
-                    <li class="plat">
-                        <div class="plat__head">
-                            Langouste rôtie 
-                        </div>
-                        <div class="plat__description">
-                            Et ses légumes de saison
-                        </div>
-                        <div class="plat__prix">
-                            35€
-                        </div>
-                        <div class="plat__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-
-                    <!--Côte de boeuf Angus -->
-                    <li class="plat">
-                        <div class="plat__head">
-                            Côte de boeuf Angus 
-                        </div>
-                        <div class="plat__description">
-                            Et sa purée de panais
-                        </div>
-                        <div class="plat__prix">
-                            44€
-                        </div>
-                        <div class="plat__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-                </ul>
-
-                <!--Dessert-->
-                <h2 class="titre-liste">Desserts</h2>
-                <ul class="service">
-
-                    <!--Farandole de desserts-->
-                    <li class="plat">
-                        <div class="plat__head">
-                            Farandole de desserts
-                        </div>
-                        <div class="plat__description">
-                            Du chef
-                        </div>
-                        <div class="plat__prix">
-                            18€
-                        </div>
-                        <div class="plat__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-
-                    <!--Crème brulée -->
-                    <li class="plat">
-                        <div class="plat__head">
-                            Crème brulée 
-                        </div>
-                        <div class="plat__description">
-                            Revisitée
-                        </div>
-                        <div class="plat__prix">
-                            22€
-                        </div>
-                        <div class="plat__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-
-                    <!--Tiramisu -->
-                    <li class="plat">
-                        <div class="plat__head">
-                            Tiramisu 
-                        </div>
-                        <div class="plat__description">
-                            À la noisette
-                        </div>
-                        <div class="plat__prix">
-                            23€
-                        </div>
-                        <div class="plat__check">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="btn-cmd">
-                Commander
-            </section>
-
-                <!-- Bas de page-->
-            <footer>
-                <div class="footer__head">
-                    Ohmyfood
+                    </div>
                 </div>
-                <ul >
-                    <li class="footer__liste--bold">
-                        <a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant </a>
-                    </li>
-                    <li class="footer__liste--bold">
-                        <a href="#"><i class="fas fa-handshake-angle"></i> Devenir partenaire</a>
-                    </li>
-                    <li class="footer__liste">
-                        <a href="#">Mentions légales</a>
-                    </li>
-                    <li class="footer__liste">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </footer>
+            </div>
+            <div class="btn-cmd">
+                <a href="#"> Commander</a>
+            </div>
+        </section>
+    
+    
+    
+    
+        <!-- Bas de page-->
+        <footer class="footer">
+            <div class="footer__head">
+                Ohmyfood
+            </div>
+            <ul>
+                <li class="footer__liste footer__liste--bold">
+                    <a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant </a>
+                </li>
+                <li class="footer__liste footer__liste--bold">
+                    <a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
+                </li>
+                <li class="footer__liste">
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li class="footer__liste">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </footer>
     </body>
 </html>
