@@ -92,7 +92,7 @@
 
 
 
-@media all and (min-device-width: map-get($breakpoints, tablette )) and (max-device-width:map-get($breakpoints, desktop )){
+@media all and (min-width: map-get($breakpoints, tablette )) and (max-width:map-get($breakpoints, desktop )){
 
 
     .restaurants{   
@@ -112,7 +112,7 @@
 
 
 
-@media all and (min-device-width: map-get($breakpoints, desktop )){
+@media all and (min-width: map-get($breakpoints, desktop )){
 
     .restaurants{   
         &__liste{

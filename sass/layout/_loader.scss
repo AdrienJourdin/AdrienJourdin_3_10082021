@@ -3,14 +3,12 @@
     inset: 0;
     color:black;
     background-color: white;
-    z-index: 20;
-    pointer-events: none;
     display: flex;
     flex-direction: column;
     text-align:center;
     width:100%;
     animation: disp-load $load-duration;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     &__head{
         margin-top: 200px;
         font-family: map-get($font-family, font-title );
@@ -49,7 +47,7 @@
 }
 
 
-@media all and (min-device-width: map-get($breakpoints, desktop )){
+@media all and (min-width: map-get($breakpoints, desktop )){
     .loader {
         &__head{
 
@@ -67,7 +65,7 @@
     }
 }
 
-@media all and (min-device-width: map-get($breakpoints, tablette )) and (max-device-width:map-get($breakpoints, desktop )){
+@media all and (min-width: map-get($breakpoints, tablette )) and (max-width:map-get($breakpoints, desktop )){
     .loader {
         &__head{
 

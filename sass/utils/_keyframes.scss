@@ -9,13 +9,19 @@
 
 @keyframes disp-load{
     0% {
-        opacity:1;   
+        opacity:1;
+        z-index:20;
     }
     75%{
         opacity:1;
+
+    }
+    99%{
+        z-index:20;
     }
     100% {
         opacity:0;
+        z-index:-10;
     }
 }
 
