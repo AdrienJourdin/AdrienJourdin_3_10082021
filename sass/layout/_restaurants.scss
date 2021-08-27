@@ -17,6 +17,7 @@
     @include shadow-grey;
     position:relative;
     margin-bottom:15px;
+    overflow: hidden;
     &__image{
         border-radius: 20px 20px 0px 0px;
         display: inline-block;
@@ -24,6 +25,9 @@
         background-size: cover;
         height:175px;
         width: 100%;
+        & img{
+            height:175px;
+        }
     }
     &__head{
         font-weight:800 ;

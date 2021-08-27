@@ -308,6 +308,7 @@ header {
   box-shadow: 2px 2px 5px #c6c6c6;
   position: relative;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 .restaurant__image {
   border-radius: 20px 20px 0px 0px;
@@ -316,6 +317,9 @@ header {
   background-size: cover;
   height: 175px;
   width: 100%;
+}
+.restaurant__image img {
+  height: 175px;
 }
 .restaurant__head {
   font-weight: 800;
